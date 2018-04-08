@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.*;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
@@ -50,7 +51,7 @@ public class LibraryTest {
             e.printStackTrace();
         }
         Library library = new Library();
-//        library.showPage();
+        library.showPage();
         String result = "1. 添加学生\n" +
                 "2. 生成成绩单\n" +
                 "3. 退出\n" +
@@ -61,7 +62,7 @@ public class LibraryTest {
                 "1. 添加学生\n" +
                 "2. 生成成绩单\n" +
                 "3. 退出\n" +
-                "请输入你的选择（1～3）：";
+                "请输入你的选择（1～3）：\n";
         assertEquals(systemOut(),result);
     }
 
@@ -112,7 +113,7 @@ public class LibraryTest {
                 "1. 添加学生\n" +
                 "2. 生成成绩单\n" +
                 "3. 退出\n" +
-                "请输入你的选择（1～3）：";
+                "请输入你的选择（1～3）：\n";
         assertEquals(systemOut(),result);
     }
 
